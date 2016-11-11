@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JQueryInputButton</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+<h1>default</h1>
+<form>
+      
+        <input type="button" value="Button">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+</form>
+<h1>Enhanced</h1>
+<form>
+        <div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+            Input value
+            <input type="button" data-enhanced="true" value="Input value">
+        </div>
+</form>
+<h1>Corners</h1>
+<form>
+        <input type="button" value="Has corners by default">
+        <input type="button" data-corners="false" value="Unset corners">
+        <div class="ui-input-btn ui-btn ui-corner-all">
+            Enhanced
+            <input type="button" data-enhanced="true" value="Enhanced">
+        </div>
+</form>
+<h1>Icon_only</h1>
+<form>
+        <input type="button" data-icon="delete" data-iconpos="notext" value="Icon only">
+        <div id="custom-border-radius">
+            <div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">
+                Enhanced - Icon only
+                <input type="button" data-enhanced="true" value="Enhanced - Icon only">
+            </div>
+        </div>
+</form>
+<h1>Shadow</h1>
+<form>
+        <input type="button" value="Has shadow by default">
+        <input type="button" data-shadow="false" value="Unset shadow">
+        <div class="ui-input-btn ui-btn ui-shadow">
+            Enhanced
+            <input type="button" data-enhanced="true" value="Enhanced">
+        </div>
+</form>
+<h1>Inline</h1>
+<form>
+        <input type="button" data-inline="true" value="Input">
+        <div class="ui-input-btn ui-btn ui-btn-inline">
+            Enhanced
+            <input type="button" data-enhanced="true" value="Enhanced">
+        </div>
+</form>
+<h1>theme</h1>
+<form>
+        <input type="button" value="Input - Inherit">
+        <input type="button" data-theme="a" value="Input - Theme swatch A">
+        <input type="button" data-theme="b" value="Input - Theme swatch B">
+        <div class="ui-input-btn ui-btn">
+            Enhanced - Inherit
+            <input type="button" data-enhanced="true" value="Enhanced - Inherit">
+        </div>
+        <div class="ui-input-btn ui-btn ui-btn-a">
+            Enhanced - Theme swatch A
+            <input type="button" data-enhanced="true" value="Enhanced - Theme swatch A">
+        </div>
+        <div class="ui-input-btn ui-btn ui-btn-b">
+            Enhanced - Theme swatch B
+            <input type="button" data-enhanced="true" value="Enhanced - Theme swatch B">
+        </div>
+</form>
+<h1>MINI</h1>
+<a href="#" class="ui-btn ui-mini">Anchor</a>
+<button class="ui-btn ui-mini">Button</button>
+
+<h1>ICons</h1>
+<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Anchor</a>
+<button class="ui-btn ui-icon-delete ui-btn-icon-left">Button</button>
+<h1>Icon position</h1>
+<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Left</a>
+<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-right">Right</a>
+<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-top">Top</a>
+<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-bottom">Bottom</a>
+<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext">Icon only</a>
+<h1>inline</h1>
+<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left">Left</a>
+<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Right</a>
+<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-top">Top</a>
+<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-bottom">Bottom</a>
+<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext">Icon only</a>
+<h1>Icon Shadow</h1>
+<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left ui-shadow-icon">Anchor</a>
+<p>Theme B:</p>
+<button class="ui-btn ui-icon-delete ui-btn-icon-left ui-shadow-icon ui-btn-b">Button</button>
+
+<h1>disable</h1>
+<a href="#" class="ui-btn ui-state-disabled">Disabled anchor via class</a>
+<button disabled="">Button with disabled attribute</button>
+<h1>Native Button</h1>
+<button data-role="none">Button</button>
+</body>
+</html>
