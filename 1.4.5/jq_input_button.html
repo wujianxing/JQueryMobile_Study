@@ -10,103 +10,117 @@
 
 </head>
 <body>
-<h1>default</h1>
-<form>
-      
-        <input type="button" value="Button">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+<div data-role="page" class="jqm-demos" data-quicklinks="true">
 
-</form>
-<h1>Enhanced</h1>
-<form>
-        <div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
-            Input value
-            <input type="button" data-enhanced="true" value="Input value">
-        </div>
-</form>
-<h1>Corners</h1>
-<form>
-        <input type="button" value="Has corners by default">
-        <input type="button" data-corners="false" value="Unset corners">
-        <div class="ui-input-btn ui-btn ui-corner-all">
-            Enhanced
-            <input type="button" data-enhanced="true" value="Enhanced">
-        </div>
-</form>
-<h1>Icon_only</h1>
-<form>
-        <input type="button" data-icon="delete" data-iconpos="notext" value="Icon only">
-        <div id="custom-border-radius">
-            <div class="ui-input-btn ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">
-                Enhanced - Icon only
-                <input type="button" data-enhanced="true" value="Enhanced - Icon only">
-            </div>
-        </div>
-</form>
-<h1>Shadow</h1>
-<form>
-        <input type="button" value="Has shadow by default">
-        <input type="button" data-shadow="false" value="Unset shadow">
-        <div class="ui-input-btn ui-btn ui-shadow">
-            Enhanced
-            <input type="button" data-enhanced="true" value="Enhanced">
-        </div>
-</form>
-<h1>Inline</h1>
-<form>
-        <input type="button" data-inline="true" value="Input">
-        <div class="ui-input-btn ui-btn ui-btn-inline">
-            Enhanced
-            <input type="button" data-enhanced="true" value="Enhanced">
-        </div>
-</form>
-<h1>theme</h1>
-<form>
-        <input type="button" value="Input - Inherit">
-        <input type="button" data-theme="a" value="Input - Theme swatch A">
-        <input type="button" data-theme="b" value="Input - Theme swatch B">
-        <div class="ui-input-btn ui-btn">
-            Enhanced - Inherit
-            <input type="button" data-enhanced="true" value="Enhanced - Inherit">
-        </div>
-        <div class="ui-input-btn ui-btn ui-btn-a">
-            Enhanced - Theme swatch A
-            <input type="button" data-enhanced="true" value="Enhanced - Theme swatch A">
-        </div>
-        <div class="ui-input-btn ui-btn ui-btn-b">
-            Enhanced - Theme swatch B
-            <input type="button" data-enhanced="true" value="Enhanced - Theme swatch B">
-        </div>
-</form>
-<h1>MINI</h1>
-<a href="#" class="ui-btn ui-mini">Anchor</a>
-<button class="ui-btn ui-mini">Button</button>
+    <div role="main" class="ui-content jqm-content">
 
-<h1>ICons</h1>
-<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Anchor</a>
-<button class="ui-btn ui-icon-delete ui-btn-icon-left">Button</button>
-<h1>Icon position</h1>
-<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Left</a>
-<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-right">Right</a>
-<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-top">Top</a>
-<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-bottom">Bottom</a>
-<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext">Icon only</a>
-<h1>inline</h1>
-<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left">Left</a>
-<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Right</a>
-<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-top">Top</a>
-<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-bottom">Bottom</a>
-<a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext">Icon only</a>
-<h1>Icon Shadow</h1>
-<a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left ui-shadow-icon">Anchor</a>
-<p>Theme B:</p>
-<button class="ui-btn ui-icon-delete ui-btn-icon-left ui-shadow-icon ui-btn-b">Button</button>
+    <h2>Basic markup</h2>
 
-<h1>disable</h1>
-<a href="#" class="ui-btn ui-state-disabled">Disabled anchor via class</a>
-<button disabled="">Button with disabled attribute</button>
-<h1>Native Button</h1>
-<button data-role="none">Button</button>
+<div data-demo-html="true">
+    <a href="#" class="ui-btn">Anchor</a>
+    <button class="ui-btn">Button</button>
+</div><!--/demo-html -->
+
+<h2>Corners</h2>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn ui-corner-all">Anchor</a>
+    <button class="ui-btn ui-corner-all">Button</button>
+</div><!--/demo-html -->
+
+<p>Icon-only buttons are round by default. Here we show how you can set the same border-radius as other buttons.</p>
+
+<div data-demo-html="true" data-demo-css="true">
+    <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+    <div id="custom-border-radius">
+        <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all">No text</a>
+    </div>
+</div><!--/demo-html -->
+
+<h2>Shadow</h2>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn ui-shadow">Anchor</a>
+    <button class="ui-btn ui-shadow">Button</button>
+</div><!--/demo-html -->
+
+<h2>Inline</h2>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn ui-btn-inline">Anchor</a>
+    <button class="ui-btn ui-btn-inline">Button</button>
+</div><!--/demo-html -->
+
+<h2>Theme</h2>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn">Anchor - Inherit</a>
+    <a href="#" class="ui-btn ui-btn-a">Anchor - Theme swatch A</a>
+    <a href="#" class="ui-btn ui-btn-b">Anchor - Theme swatch B</a>
+    <button class="ui-btn">Button - Inherit</button>
+    <button class="ui-btn ui-btn-a">Button - Theme swatch A</button>
+    <button class="ui-btn ui-btn-b">Button - Theme swatch B</button>
+</div><!--/demo-html -->
+
+<h2>Mini</h2>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn ui-mini">Anchor</a>
+    <button class="ui-btn ui-mini">Button</button>
+</div><!--/demo-html -->
+
+<h2>Icons</h2>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Anchor</a>
+    <button class="ui-btn ui-icon-delete ui-btn-icon-left">Button</button>
+</div><!--/demo-html -->
+
+<h2>Icon position</h2>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left">Left</a>
+    <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-right">Right</a>
+    <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-top">Top</a>
+    <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-bottom">Bottom</a>
+    <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-notext">Icon only</a>
+</div><!--/demo-html -->
+
+<p>Inline:</p>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-left">Left</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-right">Right</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-top">Top</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-bottom">Bottom</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext">Icon only</a>
+</div><!--/demo-html -->
+
+<h2>Icon shadow</h2>
+<p>Note: This styling option is deprecated in jQuery Mobile 1.4.0 and will be removed in 1.5.0. Accordingly, we changed the default for framework-enhanced buttons to false.</p>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn ui-icon-delete ui-btn-icon-left ui-shadow-icon">Anchor</a>
+    <p>Theme B:</p>
+    <button class="ui-btn ui-icon-delete ui-btn-icon-left ui-shadow-icon ui-btn-b">Button</button>
+</div><!--/demo-html -->
+
+<h2>Disabled</h2>
+
+<div data-demo-html="true">
+    <a href="#" class="ui-btn ui-state-disabled">Disabled anchor via class</a>
+    <button disabled>Button with disabled attribute</button>
+</div><!--/demo-html -->
+
+<h2>Native button</h2>
+<!-- TODO: Remove this demo in 1.5 -->
+<p>In 1.4 <code>button</code> will still be auto-enhanced. This example shows how you can prevent this.</p>
+
+<div data-demo-html="true">
+    <button data-role="none">Button</button>
+</div><!--/demo-html -->
+    </div>
+</div>
+
 </body>
 </html>
